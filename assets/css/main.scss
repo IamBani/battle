@@ -1,0 +1,70 @@
+body{
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  font-size: 14px;
+  position: static;
+  overflow-x:scroll;
+  background-color: #F8F8F8;
+}
+@media (min-width: 1200px){
+  .container{
+    max-width:1226px;
+  }
+}
+.container{
+  min-width:1226px;
+  padding: 0 20px;
+}
+a{
+  color: #b0b0b0;
+}
+a:hover{
+  color: #67C23A;
+}
+a:focus{
+  color: #b0b0b0;
+}
+@for $i from 0 through 100
+{
+    .s-p-#{$i}
+    {
+      padding:(0px+$i);
+    }
+}
+@for $i from 0 through 100
+{
+    .s-p-l-#{$i}
+    {
+      padding-left:(0px+$i);
+    }
+}
+ul,li{
+  margin-bottom:0;
+}
+@for $i from 0 through 700
+{
+    .s-h-#{$i}
+    {
+      height:(0px+$i);
+    }
+}
+@for $i from 0 through 500
+{
+    .s-m-t-#{$i}
+    {
+      margin-top:(0px+$i);
+    }
+}
+@for $i from 0 through 500
+{
+    .s-m-l-#{$i}
+    {
+      margin-left:(0px+$i);
+    }
+}
+@for $i from 0 through 500
+{
+    .s-m-b-#{$i}
+    {
+      margin-bottom:(0px+$i);
+    }
+}
