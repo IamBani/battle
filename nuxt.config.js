@@ -15,7 +15,7 @@ export default {
     'sierra-library/lib/index.scss',
     // 'element-ui/lib/theme-chalk/display.css',
     'element-ui/lib/theme-chalk/index.css',
-    '@/assets/css/main.scss',
+    '@/assets/css/index.scss',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
