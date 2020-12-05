@@ -8,6 +8,9 @@ import {
   Button,
   Form,
   FormItem,
+  Col,
+  Row,
+  Footer,
 } from 'element-ui'
 // import "view-design/dist/styles/iview.css";
 import locale from 'element-ui/lib/locale/lang/en'
@@ -22,5 +25,8 @@ export default {
     Vue.use(Button, { locale })
     Vue.use(Form, { locale })
     Vue.use(FormItem, { locale })
+    Vue.use(Col, { locale })
+    Vue.use(Row, { locale })
+    Vue.use(Footer, { locale })
   },
 }
