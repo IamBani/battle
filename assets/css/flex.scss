@@ -13,7 +13,7 @@
 .s_flex_justify_around{
     justify-content: space-around;
 }
-.s_flex_justify_around_between{
+.s_flex_justify_between{
     justify-content: space-between;
 }
 .s_flex_align_end{
@@ -25,7 +25,15 @@
 .s_flex_1{
     flex:1
 }
-.s_flex_wrap{
+.s_flex_nowrap{
     flex-wrap: nowrap;
 }
-
+.s_flex_wrap{
+    flex-wrap: wrap;
+}
+.s_cursor{
+    cursor: pointer;
+}
+.s_bold{
+    font-weight: bold;
+}

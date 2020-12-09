@@ -7,7 +7,16 @@
       :span="3"
       :class="index === id ? 'active' : ''"
       ><div class="bg-purple">
-        {{ item.title }}
+        <nuxt-link
+          :to="{
+            path: item.path,
+            query: {
+              id: item.path,
+            },
+          }"
+        >
+          {{ item.title }}
+        </nuxt-link>
       </div></el-col
     >
   </el-row>
@@ -27,7 +36,7 @@ export default {
         {
           id: '1',
           title: '发展历程',
-          path: '/develop',
+          path: '/development',
         },
         {
           id: '2',

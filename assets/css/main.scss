@@ -37,6 +37,27 @@ a:focus{
       padding-left:(0px+$i);
     }
 }
+@for $i from 0 through 100
+{
+    .s-p-r-#{$i}
+    {
+      padding-right:(0px+$i);
+    }
+}
+@for $i from 0 through 100
+{
+    .s-p-t-#{$i}
+    {
+      padding-top:(0px+$i);
+    }
+}
+@for $i from 0 through 100
+{
+    .s-p-b-#{$i}
+    {
+      padding-bottom:(0px+$i);
+    }
+}
 ul,li{
   margin-bottom:0;
 }
@@ -45,6 +66,13 @@ ul,li{
     .s-h-#{$i}
     {
       height:(0px+$i);
+    }
+}
+@for $i from 0 through 500
+{
+    .s-m-#{$i}
+    {
+      margin:(0px+$i);
     }
 }
 @for $i from 0 through 500
@@ -66,5 +94,19 @@ ul,li{
     .s-m-b-#{$i}
     {
       margin-bottom:(0px+$i);
+    }
+}
+@for $i from 0 through 500
+{
+    .s-m-b-#{$i}
+    {
+      margin-bottom:(0px+$i);
+    }
+}
+@for $i from 0 through 500
+{
+    .s-m-r-#{$i}
+    {
+      margin-right:(0px+$i);
     }
 }
