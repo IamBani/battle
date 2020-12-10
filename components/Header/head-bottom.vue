@@ -1,24 +1,24 @@
 <template>
   <el-row type="flex" align="middle" justify="center" class="headBottom">
     <el-col
-      v-for="(item, index) in titleList"
+      v-for="item in titleList"
       :key="item.id"
       class="grid-content s_flex s_flex_align_center s_flex_justify_center"
       :span="3"
-      :class="index === id ? 'active' : ''"
-      ><div class="bg-purple">
-        <nuxt-link
-          :to="{
-            path: item.path,
-            query: {
-              id: item.path,
-            },
-          }"
-        >
-          {{ item.title }}
-        </nuxt-link>
-      </div></el-col
     >
+      <nuxt-link
+        class="bg-purple"
+        active-class="active"
+        :to="{
+          path: item.path,
+          query: {
+            id: item.path,
+          },
+        }"
+      >
+        {{ item.title }}
+      </nuxt-link>
+    </el-col>
   </el-row>
 </template>
 
@@ -77,11 +77,20 @@ export default {
 <style lang="scss" scope>
 .headBottom {
   height: 100%;
+  .bg-purple {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+  }
   .active {
-    background-color: $white !important;
+    background-color: #de4812 !important;
   }
   .grid-content {
-    background-color: #f40;
+    background-color: #0aa770;
     height: 100%;
   }
 }

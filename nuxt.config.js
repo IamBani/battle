@@ -1,3 +1,4 @@
+import path from 'path'
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -46,6 +47,47 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     // transpile: [/^element-ui/],
+    extend(config, ctx) {
+      // Run ESLint on save
+
+      const vueLoader = config.module.rules.find(
+        (loader) => loader.loader === 'vue-loader'
+      )
+
+      /* 把audio标签在编译时转成src属性 */
+
+      vueLoader.options.transformToRequire = {
+        audio: 'src',
+      }
+
+      /* 对mp3等格式的文件用url-loader进行处理 */
+
+      config.module.rules.push({
+        test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+
+        loader: 'url-loader',
+
+        options: {
+          limit: 10000,
+          name:
+            process.env.NODE_ENV === 'production'
+              ? path.posix.join('./', 'media/[name].[hash:7].[ext]')
+              : path.posix.join('./', 'media/[name].[hash:7].[ext]'),
+        },
+      })
+
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+
+          test: /\.(js|vue)$/,
+
+          loader: 'eslint-loader',
+
+          exclude: /(node_modules)/,
+        })
+      }
+    },
     babel: {
       plugins: [
         [

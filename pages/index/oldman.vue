@@ -1,5 +1,5 @@
 <template>
-  <div class="container s-m-t-100 s-m-b-100">
+  <div class="container s-m-t-150 s-m-b-150">
     <ul class="old">
       <li
         v-for="(item, i) in list"

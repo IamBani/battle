@@ -36,10 +36,7 @@
 
 <script>
 export default {
-  asyncData({ query }) {
-    // eslint-disable-next-line no-console
-    console.log(query)
-  },
+  asyncData({ query }) {},
 }
 </script>
 

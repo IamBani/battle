@@ -4,18 +4,34 @@
       ><div class="s_header_left">东部幕后花絮战队官网</div></el-col
     >
     <el-col :span="6"
-      ><div class="music">
-        <img src="../../assets/image/logo.png" alt="" />
-        <!-- <audio src=""><audio -->
-      </div></el-col
-    >
+      ><div class="music s_cursor" @click="play">
+        <img src="../../assets/image/logo.png" alt="" :style="option" />
+        <audio ref="audio" loop src="../../assets/audio/DJ.mp3"></audio></div
+    ></el-col>
   </el-row>
 </template>
 
 <script>
 export default {
   data() {
-    return {}
+    return {
+      option: {
+        'animation-play-state': 'paused',
+      },
+    }
+  },
+  mounted() {},
+  methods: {
+    play() {
+      const audio = this.$refs.audio
+      if (audio.paused) {
+        audio.play()
+        this.$set(this.option, 'animation-play-state', 'running')
+      } else {
+        audio.pause()
+        this.$set(this.option, 'animation-play-state', 'paused')
+      }
+    },
   },
 }
 </script>
@@ -34,6 +50,15 @@ export default {
     width: 60px;
     border-radius: 50%;
     border: 5px solid #631d1d;
+    animation: xuan 3s infinite linear;
+  }
+}
+@keyframes xuan {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
   }
 }
 </style>
