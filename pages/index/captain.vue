@@ -44,8 +44,15 @@ export default {
 .curriculum {
   fieldset {
     border: 1px solid #f40;
+    color: #f40;
     legend {
       margin-left: 20px;
+      padding: 0 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    p {
+      color: #eeeeee;
     }
   }
 }

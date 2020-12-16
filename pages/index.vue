@@ -39,6 +39,7 @@ export default {
   }
   .main {
     padding: 0;
+    background-color: #202020;
   }
   .footer {
     width: 100%;

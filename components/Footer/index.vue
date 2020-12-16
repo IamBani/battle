@@ -12,10 +12,10 @@
     </div>
     <div class="s_flex s_flex_justify_center s_flex_align_center footbutton">
       <img src="../../assets/image/yyCat.png" alt="" />
-      <span class="s_cursor">点击进入幕后花絮YY频道：1454</span>
-      <span>幕后花絮战队队长：千凡</span>
+      <span class="s_cursor" @click="targ">点击进入忆城旧梦YY频道：8414</span>
+      <span>忆城旧梦队长：梦仔</span>
       <span>｜</span>
-      <span>战队花絮战队抖音ID：</span>
+      <span>忆城旧梦战队抖音ID：Im8414</span>
     </div>
   </div>
 </template>
@@ -35,14 +35,19 @@ export default {
         },
         {
           icon: 'el-icon-sunset',
-          title: '江苏战队十佳战队',
+          title: '湖北大区前三',
         },
         {
           icon: 'el-icon-baseball',
-          title: '东部战区人气战队',
+          title: '南部战区人气战队',
         },
       ],
     }
+  },
+  methods: {
+    targ() {
+      window.open('https://www.yy.com/10659642', '_blank')
+    },
   },
 }
 </script>

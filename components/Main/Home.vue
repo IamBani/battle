@@ -133,7 +133,7 @@
     <runLight class="s-m-t-20" :speed="2" width="200px"
       >我们一路走来，我们维系到今天的朋友</runLight
     >
-    <div class="container s_flex s_flex_wrap s-m-t-40 s-m-b-70">
+    <div class="container s_flex s_flex_wrap s-m-t-40 s-p-b-70">
       <span
         v-for="(item, i) in list"
         :key="i"

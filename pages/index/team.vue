@@ -1,5 +1,5 @@
 <template>
-  <div class="container s-m-t-100 s-m-b-100">
+  <div class="container s-m-t-150 s-m-b-150">
     <ul class="term">
       <li
         v-for="(item, i) in list"
@@ -111,15 +111,16 @@ export default {
     center(i) {
       if (i === this.list.length - 1) return
       const deg = 90 / i
-      this.cycle(i, deg)
+      const rightdeg = 60 / (this.list.length - i)
+      this.cycle(i, deg, rightdeg)
     },
-    cycle(i, deg) {
+    cycle(i, deg, rightdeg) {
       const leng = this.list.length
       for (let index = 0; index < leng; index++) {
         if (i > index) {
           this.$set(this.list[index], 'rotate', -deg * (i - index))
         } else if (i < index) {
-          this.$set(this.list[index], 'rotate', 30 + 15 * (index - i))
+          this.$set(this.list[index], 'rotate', 30 + rightdeg * (index - i))
         } else {
         }
         this.$set(this.list[i], 'rotate', 0)
@@ -138,7 +139,7 @@ export default {
     transition: all 700ms ease 0s;
     left: 50%;
     right: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: -75px;
     position: absolute;
     height: 400px;
     width: 130px;

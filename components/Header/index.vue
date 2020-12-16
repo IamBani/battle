@@ -1,12 +1,16 @@
 <template>
   <el-row class="s_flex s_flex_align_center head_height">
     <el-col :span="18"
-      ><div class="s_header_left">东部幕后花絮战队官网</div></el-col
+      ><div class="s_header_left">南部忆城旧梦战队官网</div></el-col
     >
     <el-col :span="6"
       ><div class="music s_cursor" @click="play">
-        <img src="../../assets/image/logo.png" alt="" :style="option" />
-        <audio ref="audio" loop src="../../assets/audio/DJ.mp3"></audio></div
+        <img src="../../assets/image/logo.jpg" alt="" :style="option" />
+        <audio
+          ref="audio"
+          loop
+          src="../../assets/audio/梦然 - 少年.flac"
+        ></audio></div
     ></el-col>
   </el-row>
 </template>

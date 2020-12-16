@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container s-m-b-200 s-m-t-200 s_flex s_flex_direction s_flex_justify_center s_flex_align_center"
+    class="container shareholder s-m-b-200 s-m-t-200 s_flex s_flex_direction s_flex_justify_center s_flex_align_center"
   >
     <div>自定义</div>
     <div>自定义</div>
@@ -21,4 +21,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.shareholder {
+  div {
+    color: #eee;
+  }
+}
+</style>

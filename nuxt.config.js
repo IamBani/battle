@@ -1,5 +1,8 @@
 import path from 'path'
 export default {
+  // router: {
+  //   base: '/team/',
+  // },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'battle',

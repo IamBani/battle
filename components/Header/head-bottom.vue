@@ -11,9 +11,6 @@
         active-class="active"
         :to="{
           path: item.path,
-          query: {
-            id: item.path,
-          },
         }"
       >
         {{ item.title }}
