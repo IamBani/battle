@@ -20,64 +20,72 @@ export default {
     return {
       list: [
         {
-          title: '天琦',
+          title: '枫落',
           des: '战队开创元勋',
         },
         {
-          title: '仙域',
-          des: '战队功勋元老',
+          title: '枪芯',
+          des: '战队开创元勋',
         },
         {
-          title: '露露',
-          des: '战队功勋元老',
+          title: '梦颖',
+          des: '战队开创元勋',
         },
         {
-          title: '佛爷',
-          des: '战队功勋元老',
+          title: '殇魂',
+          des: '战队开创元勋',
         },
         {
-          title: '洄噫',
-          des: '战队功勋元老',
+          title: '晓月',
+          des: '战队开创元勋',
         },
         {
-          title: '糖糖',
-          des: '战队功勋元老',
+          title: '玖爱',
+          des: '战队开创元勋',
         },
         {
-          title: '清风',
-          des: '战队功勋元老',
+          title: '残风',
+          des: '战队开创元勋',
         },
         {
-          title: '老哥',
-          des: '战队功勋元老',
+          title: '弃离',
+          des: '战队开创元勋',
         },
         {
-          title: '独白',
-          des: '战队功勋元老',
+          title: '季步',
+          des: '战队开创元勋',
         },
         {
-          title: '導演',
-          des: '战队功勋元老',
+          title: '星辰',
+          des: '战队开创元勋',
         },
         {
-          title: '熊猫',
-          des: '战队功勋元老',
+          title: '瑞宝',
+          des: '战队开创元勋',
         },
         {
-          title: '追忆',
-          des: '战队功勋元老',
+          title: '七七',
+          des: '战队荣誉元老',
         },
         {
-          title: '心愿',
-          des: '战队功勋元老',
+          title: '踽踽',
+          des: '战队荣誉元老',
         },
         {
-          title: '霸道',
-          des: '战队功勋元老',
+          title: '妖孽',
+          des: '战队荣誉元老',
         },
         {
-          title: '阿默',
-          des: '战队功勋元老',
+          title: '冷芯',
+          des: '战队荣誉元老',
+        },
+        {
+          title: '星宸',
+          des: '战队荣誉元老',
+        },
+        {
+          title: '谦谦',
+          des: '战队荣誉元老',
         },
       ],
     }

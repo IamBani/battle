@@ -14,23 +14,23 @@
     </el-carousel>
     <el-row class="s-m-t-30">
       <el-col :offset="18" :span="6"
-        ><div class="s_flex s_flex_align_center s_corsur">
+        ><div class="s_flex s_flex_align_center s_cursor" @click="targ">
           <el-image :src="yyCat" style="width: 35px; height: 35px"></el-image
-          >点击进入幕后花絮YY频道
+          >点击进入忆城旧梦YY频道
         </div>
-        <div class="s-m-t-10 s_flex s_flex_align_center s_corsur">
+        <div class="s-m-t-10 s_flex s_flex_align_center s_cursor">
           <el-image :src="qq2" style="width: 35px; height: 35px"></el-image
           >战队qq群
         </div>
       </el-col>
     </el-row>
     <div class="s-m-t-40 tidbits">
-      <div class="introduced">幕后花絮的介绍</div>
+      <div class="introduced">忆城旧梦的介绍</div>
     </div>
     <runLight class="s-m-t-20" :speed="2" width="200px"
-      >优秀的我们一定来自于优秀的幕后花絮</runLight
+      >优秀的我们一定来自于优秀的忆城旧梦</runLight
     >
-    <el-row type="flex" align="middle" class="s-m-t-50">
+    <el-row type="flex" align="middle" class="s-m-t-50 s-p-b-70">
       <el-col :span="6">
         <div
           class="s_flex s_flex_direction s_flex_align_center s_flex_justify_between"
@@ -87,9 +87,9 @@
         </div>
       </el-col>
     </el-row>
-    <div class="s-m-t-200 tidbits">
+    <!-- <div class="s-m-t-200 tidbits">
       <div>战队公告</div>
-    </div>
+    </div> 
     <div class="s-m-t-60 tear container">
       <div class="rowpper" :style="{ height: h + 'px' }">
         <div
@@ -142,7 +142,7 @@
       >
         {{ item.friend }}
       </span>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -239,6 +239,9 @@ export default {
   },
   mounted() {},
   methods: {
+    targ() {
+      window.open('https://www.yy.com/10659642', '_blank')
+    },
     imageLoad(e) {
       if (this.height === this.$refs.image[0].imageHeight + 'px') {
         return
